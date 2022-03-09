@@ -19,7 +19,7 @@
   "homepage": "https://joowankim.github.io/educate-harmonics/",
   "scripts": {
     "build": "npx webpack",
-    "predeploy": "yarm build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   }
 }
