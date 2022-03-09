@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 
 module.exports = {
     entry: './src/index.js',
@@ -6,4 +7,15 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
+    mode: "development",
+    plugins: [
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
+        })
+    ],
 };
