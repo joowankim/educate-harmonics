@@ -2,7 +2,7 @@ import Notes from "./notes";
 import {resolve} from "path";
 import {ToneAudioBuffer} from "tone";
 
-export class Audio {uyuy
+export class Audio {
     constructor() {
         this._buffers = {};
         for (let i = 0, len = Notes.notes.length; i < len; i++) {
